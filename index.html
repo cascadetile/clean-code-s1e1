@@ -12,22 +12,22 @@
       charset="utf-8">
   </head>
   <body>
-    <div class="aaa">
-      <img src="./eisenhower-matrix.jpg">
+    <div class="todo-header">
+      <img class="todo-header__img" src="./eisenhower-matrix.jpg">
       <a 
-        class="more_inf" 
+        class="todo-header__more-info" 
         href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
     </div>
 
-    <div class="centered-main-page-element">
+    <div class="todo-main">
       <p id="topSectionForAddingElementToList">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
+        <div class="todo-main__task-row-wrapper">
           <input 
             id="new-task"
-            class="task" 
+            class="todo-main__task-title" 
             type="text">
           <button>Add</button>
         </div>
@@ -38,22 +38,22 @@
       <ul id="incompleteTasks">
         <li>
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="todo-main__task-title">Pay Bills</label>
+          <input type="text" class="todo-main__task-title">
+          <button class="todo-main__task-edit-btn">Edit</button>
+          <button class="todo-main__task-delete-btn">
             <img src="./remove.svg">
           </button>
         </li>
-        <li class="editMode">
+        <li class="todo-main__task-edit-mode">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
+          <label class="todo-main__task-title">Go Shopping</label>
           <input 
             type="text" 
             value="Go Shopping" 
-            class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
+            class="todo-main__task-title">
+          <button class="todo-main__task-edit-btn">Save</button>
+          <button class="todo-main__task-delete-btn">
             <img src="./remove.svg"></button>
         </li>
       </ul>
@@ -63,10 +63,10 @@
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked>
-          <label class="task">See the Doctor</label>
-          <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
+          <label class="todo-main__task-title">See the Doctor</label>
+          <input type="text" class="todo-main__task-title">
+          <button class="todo-main__task-edit-btn">Edit</button>
+          <button class="todo-main__task-delete-btn">
             <img src="./remove.svg">
           </button>
         </li>

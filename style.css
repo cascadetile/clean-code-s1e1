@@ -5,41 +5,41 @@ body {
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.todo-header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
 
-.aaa img {
+.todo-header__img {
     width: 100%;
 }
 
-.aaa .more_inf {
+.todo-header__more-info {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-    .aaa { 
+    .todo-header { 
         text-align: center;
     }
 
 }
-.centered-main-page-element {
+.todo-main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
 
-.task {
+.todo-main__task-title {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
 }
 
-.task-row-wrapper {
+.todo-main__task-row-wrapper {
     display: flex;
 }
 
@@ -141,13 +141,13 @@ li >    input[type="text"] {
     width: 226px;
 }
 
-button.delete img {
+.todo-main__task-delete-btn img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.todo-main__task-delete-btn img:hover {
     transform: rotateZ(0);
 }
 
@@ -162,11 +162,11 @@ ul li input[type=text] {
     display: none;
 }
 
-ul li.editMode input[type=text] {
+.todo-main__task-edit-mode input[type=text] {
     display: inline-block;
     width: 224px;
 }
 
-ul li.editMode label {
+.todo-main__task-edit-mode label {
     display: none;
 }
